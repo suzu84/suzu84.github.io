@@ -15,6 +15,22 @@ html{
   background-position: center bottom;
   /* position: absolute; */
   height: 590px;
+  animation: open 3s linear;
+}
+
+.spin{
+  border: 10px solid pink;
+  width: 40px;
+  height: 40px;
+  border-right-color: none;
+}
+@keyframes open{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .other{
   margin: 0;
@@ -59,6 +75,8 @@ li a{
 a:hover{
   opacity: .5;
 }
+
+
 
 .sechome h1{
   /* height: 600px; */
