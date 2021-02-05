@@ -9,21 +9,16 @@ html{
   margin: 0;
   background-image: url(../images/homephoyo.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: lighten;
-  background-position: center bottom;
   /* position: absolute; */
+  background-position: center bottom;
   height: 590px;
   animation: open 3s linear;
 }
 
-.spin{
-  border: 10px solid pink;
-  width: 40px;
-  height: 40px;
-  border-right-color: none;
-}
+
 @keyframes open{
   0%{
     opacity: 0;
@@ -43,13 +38,7 @@ html{
   /* position: absolute; */
   height: 590px;
 }
-/* .big-bg{
-  backgroun-image: url(../images/homephoyo.jpg);
-  background-repeat: no-repeat;
-  background-size: contain
-  background-position: center bottom;
-  min-height: 100vh;
-} */
+
 
 /* nav{
   border-radius: 2px solid black;
@@ -64,9 +53,6 @@ html{
   justify-content: space-between;
   padding: 0;
   /* position: absolute; */
-}
-li{
-  
 }
 li a{
   text-decoration: none;
@@ -113,7 +99,6 @@ a:hover{
   justify-content: center;
   align-items: center;
   display: flex;
-  /* vertical-align: middle; */
   margin: 0 30px;
 }
 .mypic img{
@@ -188,9 +173,15 @@ a:hover{
   opacity: .5;
   cursor: pointer;
 }
+.w2 img{
+  height: 110px;
+}
 .w2:hover{
   opacity: .5;
   cursor: pointer;
+}
+.w3 img{
+  height: 110px;
 }
 .w3:hover{
   opacity: .5;
@@ -217,6 +208,7 @@ a:hover{
 .contact{
   display: flex;
   justify-content: center;
+  height: 370px;
 }
 .comemo{
   text-align: center;
@@ -316,4 +308,91 @@ input[type="submit"]{
   cursor: pointer;
   /* line-height: 1; */
   height: 30px;
+}
+
+  @media (max-width: 600px){
+  .sechome h1{
+    font-size: 2.5rem;
+    margin-top: 400px;
+  }
+  .navhome{
+    font-size: 1rem;
+    width: 300px;
+  }
+  .home{
+    margin: 0;
+    background-image: url(../images/homephoyo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-position: center;
+    height: 800px;
+    animation: open 3s linear;
+  }
+  .other{
+    margin: 0;
+    background-image: url(../images/subphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-position: center;
+    height: 1250px;
+  }
+  .secabout{
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  .mypic{
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mypic img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .seccontents{
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .secomments{
+    border: 2px solid black;
+    width: 350px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  
+  .cocontents{
+    margin-top: 400px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  .comemo p{
+    font-size: 22px;
+  }
+  textarea{
+    width: 300px;
+  }
+  input[type="submit"]{
+    width: 50px;
+  }
+  .womemo p{
+    font-size: 18px;
+  }
+  .secworks{
+    width: 300px;
+    height: 1040px;
+  }
+  .seccontentsw{
+    display: block;
+  }
 }
