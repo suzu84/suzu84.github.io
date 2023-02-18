@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* 共通 */
+html,body,ul,li,a,p {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: .9em;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 100px;
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td  {
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid #A9A9A9;
+}
+
+th {
+  width: 20%;
+  padding-right: 10px;
+  font-weight: 300;
+  font-size: .9em;
+}
+
+td {
+  width: 80%;
+  padding-left: 65px;
+  font-size: .9em;
+}
+
+/* header */
+header {
+  padding: 100px 0;
+}
+
+.navHeader {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.navHeader ul {
+  display: flex;
+}
+
+.navHeader ul li {
+  padding-right: 30px;
+}
+
+.ig img {
+  width: 20px;
+}
+
+/* mv */
+
+.mv img {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  height: 420px;
+}
+
+/* works */
+
+#works .clm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+#works img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#news a {
+  text-decoration: underline;
+
+}
+#news a:hover {
+  text-decoration: none;
+}
+
+/* contact */
+
+#contact {
+  margin-bottom: 130px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 10%;
+}
+
+input, textarea{
+  width: 85%;
+}
+
+.btn {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.btn a {
+  background: #333333;
+  padding: 20px 80px;
+  color: #fff;
+}
+
+.btn a:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+footer {
+  background: #333333;
+  text-align: center;
+  color: #fff;
+  font-size: .9em;
+  padding: 10px;
+}
+
+@media (min-width: 481px) {
+  .sp {
+    display: none;
+  }
+}
+
+/* sp */
+@media (max-width: 480px) {
+  /* SP共通1 */
+  .pc {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-weight: 300;
+  }
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+/* ここまで */
+
+header {
+  padding: 20px 0;
+}
+
+  .navHeader {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: none;
+    text-align: center;
+  }
+
+  .navHeader ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .navHeader ul li {
+    padding: 0 10px 0;
+  }
+
+  #works .clm {
+    display: block;
+  }
+  
+  #works img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  #news a {
+    text-decoration: underline;
+  
+  }
+  #news a:hover {
+    text-decoration: none;
+  }
+
+  th, td  {
+    padding: 5px 0;
+
+  }
+
+  th {
+    width: 100%;
+    padding-right: 10px;
+    font-weight: 300;
+    font-size: .9em;
+    text-align: start;
+    display: block;
+    border: none;
+  }
+  
+  td {
+    width: 100%;
+    padding-left: 0;
+    font-size: .9em;
+    display: block;
+  }
+
+  .form {
+    display: block;
+    justify-content: none;
+  }
+
+  input, textarea{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #contact {
+    margin-bottom: 80px;
+  }
+}
