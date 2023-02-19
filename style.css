@@ -282,4 +282,10 @@ header {
   #contact {
     margin-bottom: 80px;
   }
+
+  .btn a:active {
+    background: #fff;
+    color: #333333;
+    border: 1px solid #333333;
+  } 
 }
