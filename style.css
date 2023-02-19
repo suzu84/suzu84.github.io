@@ -42,6 +42,14 @@ main {
   margin: 0 auto;
 }
 
+main a {
+  text-decoration: underline;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
 .mt20 {
   margin-top: 20px;
 }
@@ -122,10 +130,6 @@ header {
   object-fit: contain;
 }
 
-#news a {
-  text-decoration: underline;
-
-}
 #news a:hover {
   text-decoration: none;
 }
