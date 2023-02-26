@@ -42,7 +42,7 @@ main {
   margin: 0 auto;
 }
 
-main a:not(.contact a) {
+main a:not(.btn a) {
   text-decoration: underline;
 }
 
