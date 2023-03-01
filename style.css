@@ -109,11 +109,22 @@ header {
 
 /* mv */
 
+.mv {
+  height: 400px;
+}
+
 .mv img {
   width: 100%;
   margin: 0 auto;
   object-fit: cover;
   height: 420px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mv img.current {
+  opacity: 1;
 }
 
 /* works */
