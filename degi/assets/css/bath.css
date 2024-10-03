@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+.mainVisual {
+  width: 100%;
+  position: relative;
+}
+
+.mainVisual img {
+  object-fit: cover;
+}
+
+.mainVisual_sp {
+  display: none;
+}
+
+.topic {
+  content: "フットサル";
+}
+
+@media screen and (max-width:769px) {
+  .mainVisual_pc {
+    display: none;
+  }
+
+  .mainVisual_sp {
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+/*==========================
+bath
+==========================*/
+#bath {
+  margin: 100px auto;
+  max-width: 1100px;
+}
+
+.bath__topics {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.bath__h3 {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.bath__h3::after {
+  position: absolute;
+  content: "Bath";
+  font-size: 70px;
+  font-weight: bold;
+  color: #28B472;
+  opacity: .2;
+  right: 50%;
+  bottom: 50%;
+  /* top: -50%; */
+  transform: translateX(50%) translateY(25%);
+}
+
+.bath__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.bath__detail {
+  width: 500px;
+}
+
+.bath__list {
+  display: flex;
+  font-size: 16px;
+}
+
+.bath__list:first-child {
+  border-top: 1px solid #28B472;
+  border-bottom: 1px solid #28B472;
+}
+
+.bath__list:nth-child(2),
+.bath__list:nth-child(3) {
+  border-bottom: 1px solid #28B472;
+}
+
+.bath__list dt {
+  width: 100px;
+  background: #AFE2CA;
+  padding: 10px;
+}
+
+.bath__list dd {
+  padding: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width:769px) {
+  #bath {
+    padding: 0 2.6%;
+    margin: 100px 0 75px;
+  }
+
+  .bath__h3::after {
+    font-size: 60px;
+  }
+
+  .bath__content {
+    margin: 40px 0;
+    display: block;
+  }
+
+  .bath__detail {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+/*==========================
+facility
+==========================*/
+#facility {
+  background: #AFE2CA;
+  padding: 100px 0;
+}
+
+.facility__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  background: #fff;
+  box-shadow: 10px 7px 4px rgb(26, 26, 26, .25);
+  border-radius: 30px;
+}
+
+.facility__h3 {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.facility__h3::after {
+  position: absolute;
+  content: "Facility";
+  font-size: 70px;
+  font-weight: bold;
+  color: #28B472;
+  opacity: .2;
+  right: 50%;
+  bottom: 50%;
+  /* top: -50%; */
+  transform: translateX(50%) translateY(25%);
+}
+
+.facility__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.facility__title {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #28B472;
+  display: inline-block;
+}
+
+@media screen and (max-width:769px) {
+  #facility {
+    background: #AFE2CA;
+    padding: 100px 2.6%;
+  }
+
+  .facility__h3::after {
+    font-size: 60px;
+  }
+
+  .facility__content {
+    padding: 50px 40px;
+  }
+
+  .facility__list {
+    display: block;
+  }
+
+  .facility__item {
+    margin-bottom: 30px;
+  }
+}
+
+/*==========================
+amenity
+==========================*/
+#amenity {
+  margin: 100px auto;
+  max-width: 1100px;
+}
+
+.amenity__h3 {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.amenity__h3::after {
+  position: absolute;
+  content: "Amenity";
+  font-size: 70px;
+  font-weight: bold;
+  color: #28B472;
+  opacity: .2;
+  right: 50%;
+  bottom: 50%;
+  /* top: -50%; */
+  transform: translateX(50%) translateY(25%);
+}
+
+.amenity__detail {
+  margin: 60px auto;
+}
+
+.amenity__list {
+  display: flex;
+  font-size: 16px;
+}
+
+.amenity__list dt {
+  width: 180px;
+  background: #AFE2CA;
+  padding: 10px;
+}
+
+.amenity__list:first-child {
+  border-top: 1px solid #28B472;
+  border-bottom: 1px solid #28B472;
+}
+
+.amenity__list:nth-child(2) {
+  border-bottom: 1px solid #28B472;
+}
+
+.amenity__list dd {
+  padding: 10px;
+  width: 100%;
+}
+
+.amenity__attention {
+  background: #AFE2CA;
+  border: 3px solid #28B472;
+  padding: 35px 30px;
+  font-size: 16px;
+}
+
+.amenity__topic {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.amenity__attention__item {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 2em;
+  text-indent: -1.4em;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width:769px) {
+  #amenity {
+    padding: 0px 2.6%;
+  }
+
+  .amenity__h3::after {
+    font-size: 60px;
+  }
+  .amenity__list dt {
+    width: 100px;
+  }
+  .amenity__detail {
+    margin: 40px auto;
+}
+.amenity__attention {
+  padding: 30px 20px;
+}
+.amenity__attention {
+  font-size: 14px;
+}
+}
